@@ -7,7 +7,7 @@ function Answer({
   // const [pressed, setPressed] = useState(false);
   const handleClick = () => {
     // setPressed(true);
-    handleClickPage(el.text);
+    handleClickPage(el.id);
   };
 
   return (
@@ -18,7 +18,7 @@ function Answer({
         el.isCorrect && isShow
           ? 'answer_wrapper answer_wrapper-correct'
           : (
-            el.text === clicked && isShow ? 'answer_wrapper answer_wrapper-wrong'
+            el.id === clicked && isShow ? 'answer_wrapper answer_wrapper-wrong'
               : 'answer_wrapper')
       }
         onClick={() => handleClick()}

@@ -12,10 +12,10 @@ function PlayPage({ level, setLevel }) {
   const [clicked, setClicked] = useState(null);
   const history = useHistory();
 
-  const checkAnswer = (text) => {
+  const checkAnswer = (id) => {
     console.log(correctAnswer);
-    console.log(text);
-    if (correctAnswer === text) return true;
+    console.log(id);
+    if (correctAnswer === id) return true;
     return false;
   };
 
@@ -37,27 +37,26 @@ function PlayPage({ level, setLevel }) {
 
     if (checkAnswer(text)) {
       if (level !== configData.data[configData.data.length - 1].levelId) {
-        setLevel(level + 1);
-        // setTimeout(() => {
-        //   window.location.reload();
-        // }, 5000);
+        setTimeout(() => {
+          setLevel(level + 1);
+          setIsShow(false);
+        }, 3000);
       } else {
         setTimeout(() => {
           history.push('/game-end');
-        }, 1000);
+        }, 3000);
       }
     } else {
       showFalseAnswer();
       setTimeout(() => {
         history.push('/game-end');
-      }, 1000);
+      }, 3000);
     }
   };
 
   useEffect(() => {
     console.log(level);
-    // setCorrectAnswer(configData.data[level].correctAnswerId);
-    setCorrectAnswer('12 years');
+    setCorrectAnswer(configData.data[level].correctAnswerId);
   }, []);
 
   return (
