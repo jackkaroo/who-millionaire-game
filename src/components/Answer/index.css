@@ -22,7 +22,7 @@
 .answer_wrapper:hover {
     border: 1px solid #FF8B37;
 }
-.answer_wrapper:focus {
+.answer_wrapper-pressed {
     background: #FFF3EB;
     border: 1px solid #FF8B37;
 }

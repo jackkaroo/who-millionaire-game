@@ -10,6 +10,8 @@ function PlayPage({ level, setLevel }) {
   const [correctAnswer, setCorrectAnswer] = useState('');
   const [isShow, setIsShow] = useState(false);
   const [clicked, setClicked] = useState(null);
+  const [pressed, setPressed] = useState(false);
+
   const history = useHistory();
 
   const checkAnswer = (id) => {
@@ -21,6 +23,7 @@ function PlayPage({ level, setLevel }) {
 
   const showTrueAnswer = () => {
     setTimeout(() => {
+      setPressed(null);
       setIsShow(true);
     }, 1000);
   };
@@ -76,6 +79,8 @@ function PlayPage({ level, setLevel }) {
                     handleClickPage={handleClickPage}
                     isShow={isShow}
                     clicked={clicked}
+                    pressed={pressed}
+                    setPressed={setPressed}
                   />
                 ))
             }

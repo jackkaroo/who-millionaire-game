@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './index.css';
 
 function Answer({
-  el, handleClickPage, isShow, clicked,
+  el, handleClickPage, isShow, clicked, pressed, setPressed,
 }) {
-  // const [pressed, setPressed] = useState(false);
   const handleClick = () => {
     // setPressed(true);
     handleClickPage(el.id);
+    setPressed(el.id);
   };
 
   return (
@@ -15,11 +15,13 @@ function Answer({
       <button
         type="button"
         className={
-        el.isCorrect && isShow
-          ? 'answer_wrapper answer_wrapper-correct'
-          : (
-            el.id === clicked && isShow ? 'answer_wrapper answer_wrapper-wrong'
-              : 'answer_wrapper')
+          el.id === pressed
+            ? 'answer_wrapper answer_wrapper-pressed' : (
+              el.isCorrect && isShow
+                ? 'answer_wrapper answer_wrapper-correct'
+                : (
+                  el.id === clicked && isShow ? 'answer_wrapper answer_wrapper-wrong'
+                    : 'answer_wrapper'))
       }
         onClick={() => handleClick()}
       >
