@@ -1,0 +1,51 @@
+.play_wrapper {
+    min-height: 100vh;
+    background: #F5F5F7;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+.play_field {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*min-height: 650px;*/
+    width:70%;
+}
+
+.play_task {
+    margin: 0;
+    margin-bottom: 270px;
+    max-width: 625px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 116%;
+    color: #1C1C21;
+}
+
+.play_answers {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.play_menu-wrapper {
+    position: fixed;
+    top:0;
+    right:0;
+    min-height: 100vh;
+    background: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.play_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+

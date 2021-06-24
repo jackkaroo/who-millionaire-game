@@ -1,0 +1,40 @@
+.page_wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    background: linear-gradient(to bottom right, #FFFFFF 50%, #FFF3EB 50%);
+}
+
+.page_image {
+    max-width: 450px;
+    width:100%;
+    margin-right: 100px;
+}
+.page_image img {
+    width:100%;
+}
+
+.page_text {
+    min-width: 624px;
+}
+
+.page_title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 116%;
+    color: #1C1C21;
+    max-width: 500px;
+    margin-bottom: 64px;
+    margin-top: 0;
+}
+
+.page_subtitle {
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(28, 28, 33, 0.5);
+    margin-bottom: 5px;
+}
