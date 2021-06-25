@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css';
 
 function Answer({
   el, handleClickPage, isShow, clicked, pressed, setPressed,
 }) {
   const handleClick = () => {
-    // setPressed(true);
     handleClickPage(el.id);
     setPressed(el.id);
   };

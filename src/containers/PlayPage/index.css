@@ -23,6 +23,7 @@
     font-size: 32px;
     line-height: 116%;
     color: #1C1C21;
+    min-height: 74px;
 }
 
 .play_answers {
@@ -31,21 +32,6 @@
     max-width: 900px;
 }
 
-.play_menu-wrapper {
-    position: fixed;
-    top:0;
-    right:0;
-    min-height: 100vh;
-    background: white;
 
-    display: flex;
-    align-items: center;
-}
-
-.play_menu {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 

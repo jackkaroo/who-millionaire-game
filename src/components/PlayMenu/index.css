@@ -1,0 +1,18 @@
+.play_menu-wrapper {
+    position: fixed;
+    top:0;
+    right:0;
+    min-height: 100vh;
+    background: white;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.play_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
