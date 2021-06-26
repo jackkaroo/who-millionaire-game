@@ -42,7 +42,7 @@ function PlayPage() {
     } else {
       setTimeout(() => {
         setIsShow(false);
-        setChosenAnswer(null);
+        setChosenAnswer(false);
         setQuestion(game.getCurrentQuestion());
         setFutureGain(game.getFutureGain());
       }, 3000);

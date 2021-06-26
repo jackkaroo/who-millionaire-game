@@ -20,7 +20,7 @@ function Answer({
                   el.answerId === chosenAnswer ? 'answer_wrapper answer_wrapper-pressed'
                     : 'answer_wrapper'))
       }
-        onClick={() => handleClick()}
+        onClick={!chosenAnswer ? () => handleClick() : null}
       >
         <span>{el.letter}</span>
         {' '}
