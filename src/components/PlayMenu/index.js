@@ -1,16 +1,15 @@
 import React from 'react';
 import './index.css';
-import { reverseData } from '../../utils/functions';
 import Level from '../Level';
 
-function PlayMenu({ data, level }) {
+function PlayMenu({ data, gain }) {
   return (
     <div className="play_menu-wrapper">
       <div className="play_menu">
         {
-          reverseData(data)
+          data
             .map((el) => {
-              if (data[level].gain > el) {
+              if (gain > el) {
                 return (
                   <Level
                     text={el}
@@ -22,7 +21,7 @@ function PlayMenu({ data, level }) {
                 <Level
                   text={el}
                   key={el}
-                  active={data[level].gain === el}
+                  active={gain === el}
                 />
               );
             })

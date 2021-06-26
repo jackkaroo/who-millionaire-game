@@ -1,17 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './index.css';
 import Page from '../../components/Page';
-import data from '../../utils/variables/index';
+import GameContext from '../../context/context';
 
-function EndPage({ level }) {
-  const getScoreFromLevel = (lev) => {
-    if (lev === 0) return 0;
-    if (lev === (data.length - 1)) return data[lev].gain;
-    return data[lev - 1].gain;
-  };
-
+function EndPage() {
+  const game = useContext(GameContext);
   return (
-    <Page href="/" buttonText="Try again" score={getScoreFromLevel(level)} />
+    <Page href="/" buttonText="Try again" score={game.getCurrentGain()} />
   );
 }
 
