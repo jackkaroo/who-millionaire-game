@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './index.css';
 import { useHistory } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
 import Answer from '../../components/Answer';
 import PlayMenu from '../../components/PlayMenu';
 import GameContext from '../../context/context';
@@ -10,6 +11,7 @@ function PlayPage() {
   const [chosenAnswer, setChosenAnswer] = useState(false);
   const [question, setQuestion] = useState(null);
   const [futureGain, setFutureGain] = useState('');
+  const [showMobileMenu, setShowMobileMenu] = useState('');
 
   const history = useHistory();
   const game = useContext(GameContext);
@@ -80,7 +82,20 @@ function PlayPage() {
                   </div>
                 </div>
               </div>
-              <PlayMenu data={game.getAllGainLevels()} gain={futureGain} />
+              <button
+                type="button"
+                className="play_menu_open-mobile"
+                onClick={() => setShowMobileMenu(true)}
+              >
+                <FaIcons.FaBars />
+              </button>
+              <PlayMenu
+                data={game.getAllGainLevels()}
+                gain={futureGain}
+                showMobileMenu={showMobileMenu ? 'open'
+                  : ''}
+                setShowMobileMenu={setShowMobileMenu}
+              />
             </div>
           )
           : 'Loading..'
