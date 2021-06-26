@@ -16,11 +16,13 @@
 .button:hover {
     background: #FFAC70;
 }
-/*.button:active {*/
-/*    outline:0;*/
-/*    background: #E87928!important;*/
-/*}*/
 .button:focus {
     outline:0;
     background: #E87928;
+}
+
+@media (min-width: 2000px) {
+    .button {
+        font-size: 28px;
+    }
 }

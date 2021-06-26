@@ -1,7 +1,7 @@
 import data from './data';
 
 class Game {
-  _FINAL_LEVEL = 1;
+  _FINAL_LEVEL = Object.keys(data).length - 1;
 
   _userLevel;
 
@@ -45,7 +45,7 @@ class Game {
   _generateQuestion() {
     const levelId = `level${this._userLevel}`;
 
-    const currentLevelQuestions = data[levelId].questions;
+    const currentLevelQuestions = this._questionsData[levelId].questions;
 
     return currentLevelQuestions[Math.floor(Math.random() * currentLevelQuestions.length)];
   }

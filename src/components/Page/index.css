@@ -38,3 +38,13 @@
     color: rgba(28, 28, 33, 0.5);
     margin-bottom: 5px;
 }
+
+@media (min-width: 2000px) {
+    .page_title {
+        font-size: 72px;
+        max-width: 600px;
+    }
+    .page_image {
+        max-width: 700px;
+    }
+}

@@ -3,139 +3,207 @@
     "questions": [
       {
         "questionId": 0.1,
-        "questionText": "1a task Who is??",
+        "questionText": "What's the biggest animal in the world?",
         "answers": [
           {
             "answerId": 0,
             "letter": "A",
-            "answerText": "10 years",
+            "answerText": "Blue Whale",
             "isCorrect": 1
           },
           {
             "answerId": 1,
             "letter": "B",
-            "answerText": "11 years",
+            "answerText": "Giraffe",
             "isCorrect": 0
           },
           {
             "answerId": 2,
             "letter": "C",
-            "answerText": "12 years",
-            "isCorrect": 1
+            "answerText": "Whale Shark",
+            "isCorrect": 0
           },
           {
             "answerId": 3,
             "letter": "D",
-            "answerText": "13 years",
+            "answerText": "African Elephant",
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [0, 2],
+        "correctAnswersIdArray": [0],
         "gain": 500
       },
       {
         "questionId": 0.2,
-        "questionText": "1b Who is???",
+        "questionText": "Who wrote Great Expectations?",
         "answers": [
           {
             "answerId": 0,
             "letter": "A",
-            "answerText": "10 years",
-            "isCorrect": 1
+            "answerText": "Thomas Hardy",
+            "isCorrect": 0
           },
           {
             "answerId": 1,
             "letter": "B",
-            "answerText": "11 years",
-            "isCorrect": 0
+            "answerText": "Charles Dickens",
+            "isCorrect": 1
           },
           {
             "answerId": 2,
             "letter": "C",
-            "answerText": "12 years",
-            "isCorrect": 1
+            "answerText": "William Blake",
+            "isCorrect": 0
           },
           {
             "answerId": 3,
             "letter": "D",
-            "answerText": "13 years",
+            "answerText": "George Eliot",
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [0, 2],
+        "correctAnswersIdArray": [1],
         "gain": 500
       }
     ],
     "gain": 500
   },
-
   "level1": {
     "questions": [
       {
         "questionId": 1.1,
-        "questionText": "2a Who is??",
+        "questionText": "Which of the Brontë sisters wrote Jane Eyre?",
         "answers": [
           {
             "answerId": 0,
             "letter": "A",
-            "answerText": "22 10 years",
-            "isCorrect": 1
+            "answerText": "Emily",
+            "isCorrect": 0
           },
           {
             "answerId": 1,
             "letter": "B",
-            "answerText": "22 11 years",
+            "answerText": "Anne",
             "isCorrect": 0
           },
           {
             "answerId": 2,
             "letter": "C",
-            "answerText": "12 years",
+            "answerText": "Charlotte",
             "isCorrect": 1
           },
           {
             "answerId": 3,
             "letter": "D",
-            "answerText": "13 years",
+            "answerText": "Acton",
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [0, 2],
-        "gain": 700
+        "correctAnswersIdArray": [2],
+        "gain": 1000
       },
       {
         "questionId": 1.2,
-        "questionText": "2b Who is???",
+        "questionText": "Who wrote the Greek epic poem The Iliad?",
         "answers": [
           {
             "answerId": 0,
             "letter": "A",
-            "answerText": "22 10 years",
-            "isCorrect": 1
+            "answerText": "Plato",
+            "isCorrect": 0
           },
           {
             "answerId": 1,
             "letter": "B",
-            "answerText": "22 11 years",
+            "answerText": "Aristophanes",
             "isCorrect": 0
           },
           {
             "answerId": 2,
             "letter": "C",
-            "answerText": "12 years",
+            "answerText": "Sophocle",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Homer",
+            "isCorrect": 1
+          }
+        ],
+        "correctAnswersIdArray": [3],
+        "gain": 1000
+      }
+    ],
+    "gain": 1000
+  },
+  "level2": {
+    "questions": [
+      {
+        "questionId": 2.1,
+        "questionText": "What is a synonym for the word Amazing?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Incredible",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Furious",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Infuriate",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Unbelievable",
+            "isCorrect": 1
+          }
+        ],
+        "correctAnswersIdArray": [0, 3],
+        "gain": 2000
+      },
+      {
+        "questionId": 2.2,
+        "questionText": "What is a synonym for the word Calm?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Fracture",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Quiet",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Peaceful",
             "isCorrect": 1
           },
           {
             "answerId": 3,
             "letter": "D",
-            "answerText": "13 years",
+            "answerText": "Frosty",
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [0, 2],
-        "gain": 700
+        "correctAnswersIdArray": [1, 2],
+        "gain": 2000
       }
     ],
-    "gain": 700
+    "gain": 2000
   }
 }

@@ -8,7 +8,7 @@ function Answer({
     handleClickPage(el.answerId);
   };
   return (
-    <div>
+    <div className="wrapper">
       <button
         type="button"
         className={

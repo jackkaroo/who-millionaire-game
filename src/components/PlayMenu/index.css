@@ -4,9 +4,7 @@
     right:0;
     min-height: 100vh;
     background: white;
-
     padding: 20px;
-
     display: flex;
     align-items: center;
 }
@@ -15,4 +13,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media (min-width: 2000px) {
+    .play_menu-wrapper {
+        padding: 50px;
+    }
 }
