@@ -1,0 +1,10 @@
+@import "common/styles/variables";
+
+* {
+  font-family: $fontFamilyDef;
+  color: $textDefaultColor;
+}
+
+body {
+  margin: 0;
+}

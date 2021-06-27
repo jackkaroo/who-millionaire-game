@@ -1,0 +1,97 @@
+@import "../../common/styles/variables";
+
+.play {
+  &_wrapper {
+    min-height: 100vh;
+    background: $black5;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+
+    @media screen and ($min-xxl) {
+      justify-content: center;
+      padding-right: 400px;
+    }
+    @media screen and ($max-lg) {
+      padding-left: 50px;
+    }
+    @media screen and ($max-sm) {
+      padding: 20px;
+    }
+  }
+
+  &_field {
+    width: 70%;
+
+    @media screen and ($min-xxl) {
+      max-width: 1400px;
+    }
+    @media screen and ($max-md) {
+      width: 100%;
+    }
+  }
+
+  &_task {
+    margin: 0;
+    margin-bottom: 15rem;
+    max-width: 625px;
+    min-height: 74px;
+    font-weight: 600;
+    font-size: $font-sm;
+    line-height: 116%;
+    color: $black100;
+
+    @media screen and ($min-xl) {
+      font-size: $font-md;
+      max-width: 700px;
+    }
+    @media screen and ($min-xxl) {
+      font-size: 64px;
+      max-width: 850px;
+    }
+    @media screen and ($max-md) {
+      margin-bottom: 10rem;
+    }
+    @media screen and ($max-xs) {
+      font-size: 18px;
+      min-height: 100%;
+    }
+    @media screen and ($max-sm) {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+
+  &_answers {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-bottom: -20px;
+
+    @media screen and ($min-xxl) {
+      max-width: 1400px;
+    }
+    @media screen and ($max-md) {
+      max-width: 800px;
+    }
+    @media screen and ($max-sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &_menu_open {
+    @media screen and ($min-md) {
+      display: none;
+    }
+    @media screen and ($max-md) {
+      display: block;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: $font-sm;
+    }
+  }
+}

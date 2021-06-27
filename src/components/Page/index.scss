@@ -1,0 +1,91 @@
+@import "../../common/styles/variables";
+
+.page {
+
+  &_wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+
+    @media screen and ($max-md) {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 16px;
+    }
+  }
+
+  &_image {
+    max-width: 450px;
+    width: 100%;
+    margin-right: 100px;
+
+    & img {
+      width: 100%;
+    }
+
+    @media screen and ($min-xxl) {
+      max-width: 700px;
+    }
+    @media screen and ($max-lg) {
+      margin-right: 50px;
+    }
+    @media screen and ($max-md) {
+      margin-right: 0;
+      margin-bottom: 24px;
+      max-width: 400px;
+    }
+    @media screen and ($max-xs) {
+      max-width: 200px;
+    }
+  }
+
+  &_text {
+    min-width: 624px;
+    @media screen and ($max-lg) {
+      min-width: 50%;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: $font-lg;
+    line-height: 116%;
+    color: $black100;
+    max-width: 470px;
+    margin-bottom: 64px;
+    margin-top: 0;
+
+    @media screen and ($min-xxl) {
+      font-size: 72px;
+      max-width: 600px;
+    }
+    @media screen and ($max-lg) {
+      font-size: $font-md;
+    }
+    @media screen and ($max-md) {
+      margin-bottom: 100px;
+    }
+    @media screen and ($max-xs) {
+      font-size: $font-sm;
+      margin-bottom: 100px;
+    }
+  }
+
+  &_subtitle {
+    font-weight: 600;
+    font-size: $font-sm;
+    color: rgba(28, 28, 33, 0.5);
+    margin-bottom: 5px;
+
+    @media screen and ($max-xs) {
+      font-size: 18px;
+    }
+  }
+}
+
+.start {
+    background: linear-gradient(to bottom right, $whiteColor 50%, $orange5 50%);
+}
+

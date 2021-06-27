@@ -30,7 +30,9 @@
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [0],
+        "correctAnswersIdArray": [
+          0
+        ],
         "gain": 500
       },
       {
@@ -62,7 +64,9 @@
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [1],
+        "correctAnswersIdArray": [
+          1
+        ],
         "gain": 500
       }
     ],
@@ -99,7 +103,9 @@
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [2],
+        "correctAnswersIdArray": [
+          2
+        ],
         "gain": 1000
       },
       {
@@ -131,7 +137,9 @@
             "isCorrect": 1
           }
         ],
-        "correctAnswersIdArray": [3],
+        "correctAnswersIdArray": [
+          3
+        ],
         "gain": 1000
       }
     ],
@@ -168,7 +176,10 @@
             "isCorrect": 1
           }
         ],
-        "correctAnswersIdArray": [0, 3],
+        "correctAnswersIdArray": [
+          0,
+          3
+        ],
         "gain": 2000
       },
       {
@@ -200,7 +211,10 @@
             "isCorrect": 0
           }
         ],
-        "correctAnswersIdArray": [1, 2],
+        "correctAnswersIdArray": [
+          1,
+          2
+        ],
         "gain": 2000
       }
     ],

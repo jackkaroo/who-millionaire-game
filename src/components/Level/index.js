@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 import numberWithCommas from '../../utils/functions';
 
 function Level({ text, active }) {

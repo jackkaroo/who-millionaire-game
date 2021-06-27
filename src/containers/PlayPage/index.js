@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import './index.css';
+import './index.scss';
 import { useHistory } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import Answer from '../../components/Answer';
@@ -73,7 +73,7 @@ function PlayPage() {
                       <Answer
                         el={el}
                         key={el.answerId}
-                        handleClickPage={handleAnswerPressed}
+                        handleAnswerPressed={handleAnswerPressed}
                         isShow={isShow}
                         chosenAnswer={chosenAnswer}
                       />
@@ -84,7 +84,7 @@ function PlayPage() {
               </div>
               <button
                 type="button"
-                className="play_menu_open-mobile"
+                className="play_menu_open"
                 onClick={() => setShowMobileMenu(true)}
               >
                 <FaIcons.FaBars />

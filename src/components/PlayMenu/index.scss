@@ -1,0 +1,50 @@
+@import "../../common/styles/variables";
+
+.play_menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    background: $whiteColor;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    @media screen and ($min-xxl) {
+      padding: 50px;
+    }
+    @media screen and ($max-md) {
+      background: #F5F5F7;
+      right: -100%;
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+    }
+
+    &-open {
+      @media screen and ($max-md) {
+        right: 0;
+      }
+    }
+  }
+
+  &-button {
+    @media screen and ($min-md) {
+      display: none;
+    }
+    @media screen and ($max-md) {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: block;
+      background: none;
+      border: none;
+      font-size: $font-sm;
+    }
+  }
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 
 function Answer({
-  el, handleClickPage, isShow, chosenAnswer,
+  el, handleAnswerPressed, isShow, chosenAnswer,
 }) {
   const handleClick = () => {
-    handleClickPage(el.answerId);
+    handleAnswerPressed(el.answerId);
   };
   return (
     <div className="wrapper">

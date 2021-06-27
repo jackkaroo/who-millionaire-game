@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './index.css';
 import Page from '../../components/Page';
 import GameContext from '../../context/context';
 

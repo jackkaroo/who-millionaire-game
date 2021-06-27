@@ -1,0 +1,46 @@
+@import "../../common/styles/variables";
+
+.level {
+  &_wrapper {
+    color: $textDefaultColor;
+    border: 1px solid $black40;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 376px;
+    min-height: 40px;
+    font-size: $font-xxs;
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+
+    @media screen and ($min-xxl) {
+      margin-bottom: 20px;
+      min-width: 450px;
+      font-size: $font-xs;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    @media screen and ($max-lg) {
+      min-width: 250px;
+    }
+    @media screen and ($max-md) {
+      min-width: 320px;
+    }
+    @media screen and ($max-xs) {
+      min-width: 250px;
+    }
+
+    &-active {
+      color: $orange100;
+      border: 1px solid $orange100;
+    }
+
+    &-disable {
+      color: $black40;
+      border: 1px solid $black40;
+    }
+  }
+}
+

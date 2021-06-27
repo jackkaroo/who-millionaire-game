@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 import * as AiIcons from 'react-icons/ai';
 import Level from '../Level';
 
@@ -7,7 +7,7 @@ function PlayMenu({
   data, gain, showMobileMenu, setShowMobileMenu,
 }) {
   return (
-    <div className={`play_menu-wrapper ${showMobileMenu}`}>
+    <div className={`play_menu-wrapper play_menu-wrapper-${showMobileMenu}`}>
       <div className="play_menu">
         {
           data
