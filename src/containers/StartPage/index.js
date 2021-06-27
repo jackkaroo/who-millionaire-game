@@ -3,7 +3,7 @@ import Page from '../../components/Page';
 
 function StartPage() {
   return (
-    <Page href="/game-play" buttonText="Start" isStart />
+    <Page href="#/game-play" buttonText="Start" isStart />
   );
 }
 

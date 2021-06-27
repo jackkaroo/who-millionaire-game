@@ -1,9 +1,10 @@
 # Tesk Task Genesis (Headway) 👾
+Hello! 
 
 ## Setup:
 ### 1. In the project directory install yarn dependencies
 ``` 
-who-millionaire-game>npm i
+who-millionaire-game>npm install
 ```
 ### 2. Run the project
 ``` 

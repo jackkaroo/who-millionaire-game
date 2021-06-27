@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import StartPage from './containers/StartPage';
 import PlayPage from './containers/PlayPage';
@@ -10,7 +10,7 @@ import Game from './game/game';
 function App() {
   return (
     <GameContext.Provider value={new Game()}>
-      <Router basename="/who-millionaire-game">
+      <Router>
         <Switch>
           <Route path="/" exact component={StartPage} />
           <Route path="/game-play" exact component={PlayPage} />

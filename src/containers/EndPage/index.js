@@ -5,7 +5,7 @@ import GameContext from '../../context/context';
 function EndPage() {
   const game = useContext(GameContext);
   return (
-    <Page href="/" buttonText="Try again" score={game.getCurrentGain()} />
+    <Page href="#/" buttonText="Try again" score={game.getCurrentGain()} />
   );
 }
 
