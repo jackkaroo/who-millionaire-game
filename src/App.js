@@ -10,7 +10,7 @@ import Game from './game/game';
 function App() {
   return (
     <GameContext.Provider value={new Game()}>
-      <Router>
+      <Router basename="/who-millionaire-game">
         <Switch>
           <Route path="/" exact component={StartPage} />
           <Route path="/game-play" exact component={PlayPage} />
