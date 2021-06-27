@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import StartPage from './containers/StartPage';
 import PlayPage from './containers/PlayPage';
