@@ -47,4 +47,4 @@ Your app is ready to be deployed!
 ``` 
 who-millionaire-game>npm run deploy
 ```
-Deploying the app to Github Pages.\
+Deploying the app to Github Pages.
