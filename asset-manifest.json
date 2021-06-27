@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/who-millionaire-game/static/css/main.43b092ba.chunk.css",
-    "main.js": "/who-millionaire-game/static/js/main.10a357fc.chunk.js",
-    "main.js.map": "/who-millionaire-game/static/js/main.10a357fc.chunk.js.map",
+    "main.js": "/who-millionaire-game/static/js/main.1c832568.chunk.js",
+    "main.js.map": "/who-millionaire-game/static/js/main.1c832568.chunk.js.map",
     "runtime-main.js": "/who-millionaire-game/static/js/runtime-main.6f9cd636.js",
     "runtime-main.js.map": "/who-millionaire-game/static/js/runtime-main.6f9cd636.js.map",
-    "static/js/2.f5f0332f.chunk.js": "/who-millionaire-game/static/js/2.f5f0332f.chunk.js",
-    "static/js/2.f5f0332f.chunk.js.map": "/who-millionaire-game/static/js/2.f5f0332f.chunk.js.map",
+    "static/js/2.38c9bea0.chunk.js": "/who-millionaire-game/static/js/2.38c9bea0.chunk.js",
+    "static/js/2.38c9bea0.chunk.js.map": "/who-millionaire-game/static/js/2.38c9bea0.chunk.js.map",
     "index.html": "/who-millionaire-game/index.html",
     "static/css/main.43b092ba.chunk.css.map": "/who-millionaire-game/static/css/main.43b092ba.chunk.css.map",
-    "static/js/2.f5f0332f.chunk.js.LICENSE.txt": "/who-millionaire-game/static/js/2.f5f0332f.chunk.js.LICENSE.txt",
+    "static/js/2.38c9bea0.chunk.js.LICENSE.txt": "/who-millionaire-game/static/js/2.38c9bea0.chunk.js.LICENSE.txt",
     "static/media/hand.304827ab.png": "/who-millionaire-game/static/media/hand.304827ab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6f9cd636.js",
-    "static/js/2.f5f0332f.chunk.js",
+    "static/js/2.38c9bea0.chunk.js",
     "static/css/main.43b092ba.chunk.css",
-    "static/js/main.10a357fc.chunk.js"
+    "static/js/main.1c832568.chunk.js"
   ]
 }
