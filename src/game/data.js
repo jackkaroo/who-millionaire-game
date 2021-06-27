@@ -1,4 +1,4 @@
-import configData from '../config/newConfig.json';
+import configData from '../config/config.json';
 
 const data = configData;
 
