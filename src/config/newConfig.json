@@ -95,12 +95,6 @@
             "letter": "C",
             "answerText": "Charlotte",
             "isCorrect": 1
-          },
-          {
-            "answerId": 3,
-            "letter": "D",
-            "answerText": "Acton",
-            "isCorrect": 0
           }
         ],
         "correctAnswersIdArray": [
@@ -127,18 +121,12 @@
           {
             "answerId": 2,
             "letter": "C",
-            "answerText": "Sophocle",
-            "isCorrect": 0
-          },
-          {
-            "answerId": 3,
-            "letter": "D",
             "answerText": "Homer",
             "isCorrect": 1
           }
         ],
         "correctAnswersIdArray": [
-          3
+          2
         ],
         "gain": 1000
       }
@@ -219,5 +207,350 @@
       }
     ],
     "gain": 2000
+  },
+  "level3": {
+    "questions": [
+      {
+        "questionId": 3.1,
+        "questionText": "Which famous Spanish writer wrote Don Quixote?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Camilo Jose Cela",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Julio Iglesias",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Miguel Cervantes",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Ramon Sender",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          2
+        ],
+        "gain": 4000
+      }
+    ],
+    "gain": 4000
+  },
+  "level4": {
+    "questions": [
+      {
+        "questionId": 4.1,
+        "questionText": "Which French writer wrote Les Misérables?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Jules Verne",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Victor Hugo",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Alexandre Dumas",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Gustave Flaubert",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          1
+        ],
+        "gain": 8000
+      }
+    ],
+    "gain": 8000
+  },
+  "level5": {
+    "questions": [
+      {
+        "questionId": 5.1,
+        "questionText": "Which acclaimed Russian wrote Anna Karenina?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Ivan Turgenev",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Nicolai Gogol",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Fyodor Dostoevsky",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Leo Tolstoi",
+            "isCorrect": 1
+          }
+        ],
+        "correctAnswersIdArray": [
+          3
+        ],
+        "gain": 16000
+      }
+    ],
+    "gain": 16000
+  },
+  "level6": {
+    "questions": [
+      {
+        "questionId": 6.1,
+        "questionText": "Who wrote Moby-Dick or, The Whale?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Nathaniel Hawthorne",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Mark Twain",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Henry Thoreau",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Herman Melville",
+            "isCorrect": 1
+          }
+        ],
+        "correctAnswersIdArray": [
+          3
+        ],
+        "gain": 32000
+      }
+    ],
+    "gain": 32000
+  },
+  "level7": {
+    "questions": [
+      {
+        "questionId": 7.1,
+        "questionText": "Which American writer wrote Leaves of Grass?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Walt Whitman",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Mark Twain",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Ernest Hemingway",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          0
+        ],
+        "gain": 64000
+      }
+    ],
+    "gain": 64000
+  },
+  "level8": {
+    "questions": [
+      {
+        "questionId": 8.1,
+        "questionText": "Who wrote the Spanish Civil War book For Whom the Bell Tolls?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Ernest Hemingway",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Nathaniel Hawthorne",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Henry Thoreau",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Herman Melville",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          0
+        ],
+        "gain": 128000
+      }
+    ],
+    "gain": 128000
+  },
+  "level9": {
+    "questions": [
+      {
+        "questionId": 9.1,
+        "questionText": "Which acclaimed Russian wrote Crime and Punishment?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Ivan Turgenev",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Nicolai Gogol",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Fyodor Dostoevsky",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Leo Tolstoi",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          2
+        ],
+        "gain": 256000
+      }
+    ],
+    "gain": 256000
+  },
+  "level10": {
+    "questions": [
+      {
+        "questionId": 10.1,
+        "questionText": "Who wrote \"Big brother is watching you\"?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "George Orwell",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Timothy Leary",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Henry Ford",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Aldous Huxley",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          0
+        ],
+        "gain": 500000
+      }
+    ],
+    "gain": 500000
+  },
+  "level11": {
+    "questions": [
+      {
+        "questionId": 11.1,
+        "questionText": "Which Italian writer wrote The Prince?",
+        "answers": [
+          {
+            "answerId": 0,
+            "letter": "A",
+            "answerText": "Giovanni Boccaccio",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 1,
+            "letter": "B",
+            "answerText": "Niccolò Machiavelli",
+            "isCorrect": 1
+          },
+          {
+            "answerId": 2,
+            "letter": "C",
+            "answerText": "Dante Alighieri",
+            "isCorrect": 0
+          },
+          {
+            "answerId": 3,
+            "letter": "D",
+            "answerText": "Francesco Petrarca",
+            "isCorrect": 0
+          }
+        ],
+        "correctAnswersIdArray": [
+          1
+        ],
+        "gain": 1000000
+      }
+    ],
+    "gain": 1000000
   }
 }

@@ -8,10 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 376px;
-    min-height: 40px;
+    min-width: 340px;
+    padding: 5px;
     font-size: $font-xxs;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     border-radius: 20px;
 
@@ -24,12 +24,15 @@
     }
     @media screen and ($max-lg) {
       min-width: 250px;
+      margin-bottom: 5px;
     }
     @media screen and ($max-md) {
       min-width: 320px;
+      margin-bottom: 8px;
     }
     @media screen and ($max-xs) {
       min-width: 250px;
+      font-size: 14px;
     }
 
     &-active {
