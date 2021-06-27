@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import hand from '../../images/hand.png';
 import Button from '../Button';
+import numberWithCommas from '../../utils/functions';
 
 function Page({
   href, buttonText, isStart, score,
@@ -19,7 +20,7 @@ function Page({
               <div className="page_subtitle">Total score:</div>
               <h1 className="page_title">
                 $
-                {score}
+                {numberWithCommas(score)}
                 {' '}
                 earned
               </h1>
