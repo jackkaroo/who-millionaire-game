@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './index.css';
 import { useHistory } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
 import Answer from '../../components/Answer';
-import configData from '../../config/config.json';
 import PlayMenu from '../../components/PlayMenu';
+import GameContext from '../../context/context';
 
-function PlayPage({ level, setLevel }) {
-  const [correctAnswer, setCorrectAnswer] = useState([]);
+function PlayPage() {
   const [isShow, setIsShow] = useState(false);
-  const [clicked, setClicked] = useState(null);
-  const [pressed, setPressed] = useState(false);
+  const [chosenAnswer, setChosenAnswer] = useState(false);
+  const [question, setQuestion] = useState(null);
+  const [futureGain, setFutureGain] = useState('');
+  const [showMobileMenu, setShowMobileMenu] = useState('');
 
   const history = useHistory();
-  const { data } = configData;
-
-  const checkAnswer = (id) => {
-    console.log(correctAnswer);
-    if (Array.isArray(correctAnswer)) return (correctAnswer.includes(id));
-    return (correctAnswer === (id));
-  };
+  const game = useContext(GameContext);
 
   const showTrueAnswer = () => {
     setTimeout(() => {
-      setPressed(null);
       setIsShow(true);
     }, 1000);
   };
@@ -33,60 +28,79 @@ function PlayPage({ level, setLevel }) {
     }, 1000);
   };
 
-  const handleClickPage = (text) => {
-    setClicked(text);
+  const handleAnswerPressed = (id) => {
+    const message = game.verifyAnswer(id);
+    setChosenAnswer(id);
     showTrueAnswer();
-
-    if (checkAnswer(text)) {
-      if (level !== data[data.length - 1].levelId) {
-        setTimeout(() => {
-          setLevel(level + 1);
-          setIsShow(false);
-        }, 3000);
-      } else {
-        setTimeout(() => {
-          history.push('/game-end');
-        }, 3000);
-      }
-    } else {
+    if (message === 'Victory') {
+      setTimeout(() => {
+        history.push('/game-end');
+      }, 3000);
+    } else if (message === 'Loose') {
       showFalseAnswer();
       setTimeout(() => {
         history.push('/game-end');
+      }, 3000);
+    } else {
+      setTimeout(() => {
+        setIsShow(false);
+        setChosenAnswer(false);
+        setQuestion(game.getCurrentQuestion());
+        setFutureGain(game.getFutureGain());
       }, 3000);
     }
   };
 
   useEffect(() => {
-    console.log(level);
-    console.log(data[level].correctAnswerId);
-    setCorrectAnswer(data[level].correctAnswerId);
+    game.startGame();
+    setQuestion(game.getCurrentQuestion());
+    setFutureGain(game.getFutureGain());
   }, []);
 
   return (
-    <div className="play_wrapper">
-      <div className="play_field">
-        <h2 className="play_task">{data[level].question}</h2>
-        <div>
-          <div className="play_answers">
-            {
-              data[level].answers
-                .map((el) => (
-                  <Answer
-                    el={el}
-                    key={el.id}
-                    handleClickPage={handleClickPage}
-                    isShow={isShow}
-                    clicked={clicked}
-                    pressed={pressed}
-                    setPressed={setPressed}
-                  />
-                ))
-            }
-          </div>
-        </div>
-      </div>
-      <PlayMenu data={data} level={level} />
-    </div>
+    <>
+      {
+        question
+          ? (
+            <div className="play_wrapper">
+              <div className="play_field">
+                <h2 className="play_task">{question.questionText}</h2>
+                <div>
+                  <div className="play_answers">
+                    {
+                  question.answers
+                    .map((el) => (
+                      <Answer
+                        el={el}
+                        key={el.answerId}
+                        handleClickPage={handleAnswerPressed}
+                        isShow={isShow}
+                        chosenAnswer={chosenAnswer}
+                      />
+                    ))
+                }
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                className="play_menu_open-mobile"
+                onClick={() => setShowMobileMenu(true)}
+              >
+                <FaIcons.FaBars />
+              </button>
+              <PlayMenu
+                data={game.getAllGainLevels()}
+                gain={futureGain}
+                showMobileMenu={showMobileMenu ? 'open'
+                  : ''}
+                setShowMobileMenu={setShowMobileMenu}
+              />
+            </div>
+          )
+          : 'Loading..'
+      }
+    </>
   );
 }
 

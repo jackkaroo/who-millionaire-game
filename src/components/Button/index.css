@@ -11,16 +11,28 @@
     font-size: 20px;
     color: #FFFFFF;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 
 .button:hover {
     background: #FFAC70;
 }
-/*.button:active {*/
-/*    outline:0;*/
-/*    background: #E87928!important;*/
-/*}*/
 .button:focus {
     outline:0;
     background: #E87928;
+}
+
+@media (min-width: 2000px) {
+    .button {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 525px) {
+    .button {
+        min-width: 90%;
+        max-width: 288px;
+        padding: 16px 0;
+        font-size: 14px;
+    }
 }

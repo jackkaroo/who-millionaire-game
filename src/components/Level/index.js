@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { numberWithCommas } from '../../utils/functions';
+import numberWithCommas from '../../utils/functions';
 
 function Level({ text, active }) {
   return (
