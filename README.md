@@ -8,11 +8,11 @@ receive question of curtain level randomly. \
 Most questions are about books so I hope you will enjoy testing:)
 
 
-I had some problem with deploying app to Git Hub Pages and configuring HashRouter for it,\
+I had some problem with deploying app to Github Pages and configuring HashRouter for it,\
 so I decided to return back BrowserRouter in my master branch. \
 So to test my work please run the app locally.
 
-But you can still see my work on the Git Hub Pages, \
+But you can still see my work on the Github Pages, \
 but because of HashRouter it doesn't work properly.\
 [https://jackkaroo.github.io/who-millionaire-game](https://jackkaroo.github.io/who-millionaire-game/)
 
